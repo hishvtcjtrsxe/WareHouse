@@ -33,7 +33,7 @@ const Dashboard: React.FC = () => {
             <div className="card-body">
               <h5 className="card-title">Net Worth</h5>
               <h2 className="card-text text-primary">
-                ${netWorth.toFixed(2)}
+                ₹{netWorth.toFixed(2)}
               </h2>
               <p className="card-text text-muted">
                 Total value of all products at wholesale price

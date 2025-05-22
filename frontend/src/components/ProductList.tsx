@@ -108,11 +108,11 @@ const ProductList: React.FC = () => {
                   <h5 className="card-title">{product.name}</h5>
                   <div className="mb-2">
                     <small className="text-muted">Wholesale Price:</small>
-                    <div>${product.wholesalePrice.toFixed(2)}</div>
+                    <div>₹{product.wholesalePrice.toFixed(2)}</div>
                   </div>
                   <div className="mb-2">
                     <small className="text-muted">Retail Price:</small>
-                    <div>${product.retailPrice.toFixed(2)}</div>
+                    <div>₹{product.retailPrice.toFixed(2)}</div>
                   </div>
                   <div className="mb-3">
                     <small className="text-muted">Stock:</small>
@@ -152,8 +152,8 @@ const ProductList: React.FC = () => {
                 {filteredProducts.map((product) => (
                   <tr key={product._id}>
                     <td>{product.name}</td>
-                    <td>${product.wholesalePrice.toFixed(2)}</td>
-                    <td>${product.retailPrice.toFixed(2)}</td>
+                    <td>₹{product.wholesalePrice.toFixed(2)}</td>
+                    <td>₹{product.retailPrice.toFixed(2)}</td>
                     <td>{product.stockQuantity}</td>
                     <td>
                       <Link
